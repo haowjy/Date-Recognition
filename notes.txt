@@ -1,0 +1,2 @@
+Could be web application
+Flutter already has ML kit for text detection
