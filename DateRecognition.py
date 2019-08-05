@@ -1,4 +1,4 @@
-import pytesseract
+
 import shutil
 import os
 import re
@@ -11,6 +11,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
+import pytesseract
 
 class ImageStringToDate():
 
@@ -64,7 +65,7 @@ class ImageStringToDate():
             print("__________")
             print(self.titles[types] + ":")
             try:
-                cv2_imshow(self.images[types])
+                cv2.imshow(self.images[types])
             except:
                 print("cannot show image")
             print(self.all_thresh[types])
